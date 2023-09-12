@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.ConstrainedExecution;
@@ -264,6 +264,41 @@ namespace Homework_11_09_2023
             else if (fourth_number > first_number_fv && fourth_number > second_number_sv && fourth_number > third_number_sv)
             {
                 Console.WriteLine(third_number_sv);
+            }
+            else
+            {
+                Console.WriteLine("There is no output.");
+            }
+            // Answer to the fourteenth question:
+            Console.WriteLine("Please enter the first number here:");
+            double number1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the second number here:");
+            double number2 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the third number here:");
+            double number3 = double.Parse(Console.ReadLine());
+            if (number1 > number2 && number2 > number3)
+            {
+                Console.WriteLine(number3 + "," + number2 + "," + number1);
+            }
+            else if (number1 > number3 && number3 > number2)
+            {
+                Console.WriteLine(number2 + "," + number3 + "," + number1);
+            }
+            else if (number2 > number1 && number1 > number3)
+            {
+                Console.WriteLine(number3 + "," + number1 + "," + number2);
+            }
+            else if (number2 > number3 && number3 > number1)
+            {
+                Console.WriteLine(number1 + "," + number3 + "," + number2);
+            }
+            else if (number3 > number1 && number1 > number2)
+            {
+                Console.WriteLine(number2 + "," + number1 + "," + number3);
+            }
+            else if (number3 > number2 && number2 > number1)
+            {
+                Console.WriteLine(number1 + "," + number2 + "," + number3);
             }
             else
             {
