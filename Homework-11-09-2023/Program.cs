@@ -210,7 +210,7 @@ namespace Homework_11_09_2023
             double first_number_sv = double.Parse(Console.ReadLine());
             Console.WriteLine("Please enter the second number here:");
             double second_number_sv = double.Parse(Console.ReadLine());
-            if (first_number < 0 && second_number < 0)
+            if (first_number_sv < 0 && second_number_sv < 0)
             {
                 Console.WriteLine("Both numbers are negative numbers.");
             }
