@@ -92,7 +92,7 @@ namespace Homework_11_09_2023
             else
             {
                 double absolute_value_of_the_number = number;
-                Console.WriteLine("|{0}|={absolute_value_of_the_number}", number,absolute_value_of_the_number);
+                Console.WriteLine("|"+number+"|="+ absolute_value_of_the_number);
             }
             // Answer to the sixth question:
             Console.WriteLine("Please enter here the number of calls that the user made:");
@@ -183,7 +183,8 @@ namespace Homework_11_09_2023
                 }
                 else
                 {
-                    Console.WriteLine("The amount of money to be paid with the tax is: {0}", 100);
+                    Console.WriteLine("The min. amount of money to be paid without the tax is: {0}", 100);
+                    Console.WriteLine("The min. amount of money to be paid with the tax is: {0}", 100*1.16f);
                 }
             }
             else if (electricity_use_kwh >= 20)
@@ -253,17 +254,17 @@ namespace Homework_11_09_2023
             {
                 Console.WriteLine(first_number_fv);
             }
-            else if (second_number_fv > first_number_fv && second_number_fv > third_number_sv && second_number_fv > fourth_number)
+            if (second_number_fv > first_number_fv && second_number_fv > third_number_sv && second_number_fv > fourth_number)
             {
                 Console.WriteLine(second_number_fv);
             }
-            else if (third_number_sv > first_number_fv && third_number_sv > second_number_sv && third_number_sv > fourth_number)
+            if (third_number_sv > first_number_fv && third_number_sv > second_number_sv && third_number_sv > fourth_number)
             {
                 Console.WriteLine(third_number_sv);
             }
-            else if (fourth_number > first_number_fv && fourth_number > second_number_sv && fourth_number > third_number_sv)
+            if (fourth_number > first_number_fv && fourth_number > second_number_sv && fourth_number > third_number_sv)
             {
-                Console.WriteLine(third_number_sv);
+                Console.WriteLine(fourth_number);
             }
             else
             {
@@ -280,23 +281,23 @@ namespace Homework_11_09_2023
             {
                 Console.WriteLine(number3 + "," + number2 + "," + number1);
             }
-            else if (number1 > number3 && number3 > number2)
+            if (number1 > number3 && number3 > number2)
             {
                 Console.WriteLine(number2 + "," + number3 + "," + number1);
             }
-            else if (number2 > number1 && number1 > number3)
+            if (number2 > number1 && number1 > number3)
             {
                 Console.WriteLine(number3 + "," + number1 + "," + number2);
             }
-            else if (number2 > number3 && number3 > number1)
+            if (number2 > number3 && number3 > number1)
             {
                 Console.WriteLine(number1 + "," + number3 + "," + number2);
             }
-            else if (number3 > number1 && number1 > number2)
+            if (number3 > number1 && number1 > number2)
             {
                 Console.WriteLine(number2 + "," + number1 + "," + number3);
             }
-            else if (number3 > number2 && number2 > number1)
+            if (number3 > number2 && number2 > number1)
             {
                 Console.WriteLine(number1 + "," + number2 + "," + number3);
             }
@@ -360,6 +361,7 @@ namespace Homework_11_09_2023
                     Console.WriteLine("sorry.");
                 }
             }
+            Console.ReadKey();
         }
     }
 }
