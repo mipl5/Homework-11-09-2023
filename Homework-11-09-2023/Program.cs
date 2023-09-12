@@ -254,7 +254,7 @@ namespace Homework_11_09_2023
             {
                 Console.WriteLine(first_number_fv);
             }
-            if (second_number_fv > first_number_fv && second_number_fv > third_number_sv && second_number_fv > fourth_number)
+            else if (second_number_fv > first_number_fv && second_number_fv > third_number_sv && second_number_fv > fourth_number)
             {
                 Console.WriteLine(second_number_fv);
             }
