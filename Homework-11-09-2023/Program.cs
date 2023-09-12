@@ -344,17 +344,17 @@ namespace Homework_11_09_2023
             if (natural_number_sv >= 10 && natural_number_sv <= 99)
             {
                 string natural_number_sv_str = Convert.ToString(natural_number_sv);
-                if (natural_number_sv_str.Contains('5'))
-                {
-                    Console.WriteLine("That number has the digit 5.");
-                }
-                if (natural_number_sv % 5 == 0)
-                {
-                    Console.WriteLine("The number is divisible by 5.");
-                }
                 if (natural_number_sv_str.Contains('5') && (natural_number_sv % 5 == 0))
                 {
                     Console.WriteLine("That number has the digit 5 and is divisible by 5.");
+                }
+                else if (natural_number_sv_str.Contains('5'))
+                {
+                    Console.WriteLine("That number has the digit 5.");
+                }
+                else if (natural_number_sv % 5 == 0)
+                {
+                    Console.WriteLine("The number is divisible by 5.");
                 }
                 else
                 {
