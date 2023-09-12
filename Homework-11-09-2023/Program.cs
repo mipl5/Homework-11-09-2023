@@ -349,7 +349,7 @@ namespace Homework_11_09_2023
                 }
                 if (natural_number_sv % 5 == 0)
                 {
-                    Console.WriteLine('The number is divisible by 5.');
+                    Console.WriteLine("The number is divisible by 5.");
                 }
                 if (natural_number_sv_str.Contains('5') && (natural_number_sv % 5 == 0))
                 {
