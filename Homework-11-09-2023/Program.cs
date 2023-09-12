@@ -258,11 +258,11 @@ namespace Homework_11_09_2023
             {
                 Console.WriteLine(second_number_fv);
             }
-            if (third_number_sv > first_number_fv && third_number_sv > second_number_sv && third_number_sv > fourth_number)
+            else if (third_number_sv > first_number_fv && third_number_sv > second_number_sv && third_number_sv > fourth_number)
             {
                 Console.WriteLine(third_number_sv);
             }
-            if (fourth_number > first_number_fv && fourth_number > second_number_sv && fourth_number > third_number_sv)
+            else if (fourth_number > first_number_fv && fourth_number > second_number_sv && fourth_number > third_number_sv)
             {
                 Console.WriteLine(fourth_number);
             }
@@ -281,23 +281,23 @@ namespace Homework_11_09_2023
             {
                 Console.WriteLine(number3 + "," + number2 + "," + number1);
             }
-            if (number1 > number3 && number3 > number2)
+            else if (number1 > number3 && number3 > number2)
             {
                 Console.WriteLine(number2 + "," + number3 + "," + number1);
             }
-            if (number2 > number1 && number1 > number3)
+            else if (number2 > number1 && number1 > number3)
             {
                 Console.WriteLine(number3 + "," + number1 + "," + number2);
             }
-            if (number2 > number3 && number3 > number1)
+            else if (number2 > number3 && number3 > number1)
             {
                 Console.WriteLine(number1 + "," + number3 + "," + number2);
             }
-            if (number3 > number1 && number1 > number2)
+            else if (number3 > number1 && number1 > number2)
             {
                 Console.WriteLine(number2 + "," + number1 + "," + number3);
             }
-            if (number3 > number2 && number2 > number1)
+            else if (number3 > number2 && number2 > number1)
             {
                 Console.WriteLine(number1 + "," + number2 + "," + number3);
             }
